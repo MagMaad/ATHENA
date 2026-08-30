@@ -3,6 +3,7 @@ main: io.github.thatsmusic99.athena.AthenaCore
 version: 1.0
 author: Thatsmusic99
 api-version: 1.17
+folia-supported: true
 contributors: [oxolotel, YouHaveTrouble]
 
 commands:

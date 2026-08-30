@@ -21,7 +21,7 @@ public class AthenaCore extends JavaPlugin {
         getCommand("athena").setExecutor(new AthenaCommand());
         new Metrics(this, 12408);
         new RemappingUtil();
-        Bukkit.getScheduler().runTaskAsynchronously(this, EventCache::new);
+        Bukkit.getAsyncScheduler().runNow(this, $ -> new EventCache());
     }
 
     public static AthenaCore get() {
